@@ -1,23 +1,149 @@
-/*Design de*/
+/*Design de Joana*/
 
-a {
-    color: inherit;
+body {
+    font-family: "Exo", sans-serif;
+    line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Montserrat Subrayada', sans-serif;
-}
+h1, h2, h3, h4 { font-weight: 700; }
 
-p {
-    font-family: 'Josefin Slab', serif;
-    font-size: 40px;
-}
-
-.container {
-    width: auto;
-    height: 250px;
-    background-color: rebeccapurple;
-    padding: 40px;
+.flex {
     display: flex;
-    margin: 40px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    height: 600px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color : #FFBE98;
+}
+
+.navbar {
+    margin: 0 20px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar p, .navbar li, .navbar a {
+    padding: 20px;
+    font-weight: 500;
+}
+
+.navbar p {
+    font-size: 24px;
+}
+
+.navbar li:last-child a {
+    color: white;
+}
+
+.title {
+    position: absolute;
+    bottom: -1%;
+    left: 10%;
+}
+
+h1 {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color : #E5844B;
+}
+
+.square1, .square2 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.square1 {
+    position: absolute;
+    top: -45%;
+    right: -8%;
+}
+
+.square2 {
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 60px auto;
+    color : #E5844B;
+}
+
+section.flex {
+    justify-content: space-around;
+}
+
+.card {
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 2px #00000025;
+    overflow: hidden;
+}
+
+.card img {
+    height: 400px;
+    position: relative;
+    left: -25%;
+}
+
+.building_info {
+    padding: 0 20px;
+}
+
+.building_info p {
+    margin: 10px 0;
+}
+
+.announce {
+    margin: 40px 0;
+}
+
+.button {
+    margin: 20px auto;
+    width: 240px;
+    padding: 20px;
+    color: white;
+    background-color: #E5844B;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 500ms;
+    display: block;
+    padding: 20px;
+    color: white;
+    transition: 500ms;
+}
+
+.button:hover {
+    background-color: #fde6d1;
+    color: #E5844B;
+}
+
+footer {
+    text-align: center;
+    height: 200px;
+    background-color : #FFBE98;
+    color : white;
+}
+
+footer p {
+    position: relative;
+    top : 50%;
 }

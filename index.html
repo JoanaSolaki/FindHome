@@ -4,6 +4,9 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width"/>
     <title>FindHome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/1ed5727593.js" crossorigin="anonymous"></script>
@@ -11,14 +14,77 @@
   </head>
 
   <body>
-    <header>
-
+      <header>
+      <div class="navbar flex">
+        <p class="logo">FindHome</p>
+        <ul class="flex">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formulaire.html">Formulaire</a></li>
+        </ul>
+      </div>
+      <div class="title">
+        <h1>TROUVEZ VOTRE FOYER</h1>
+        <div class="square1"></div>
+        <div class="square2"></div>
+      </div>
     </header>
-    <main>
 
+    <main class="wrapper">
+      <section class="flex">
+        <div class="card ">
+          <img src="img/maison.jpg" alt="Maison">
+          <div class="building_info">
+            <div class="flex">
+              <h3><span>Maison</span> - 240m²</h3>
+              <p>400 000€</p>
+            </div>
+            <p>102 rue de l'adresse 38000 Grenoble</p>
+            <p>1 Étage - Garage - Jardin</p>
+            <p>Nullam porttitor nisl ac augue tempor, vel 
+            dapibus nulla vestibulum. Aliquam accumsan
+            eros et odio venenatis accumsan.</p>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="img/appartement.jpg" alt="Maison">
+          <div class="building_info">
+            <div class="flex">
+              <h3><span>Maison</span> - 240m²</h3>
+              <p>400 000€</p>
+            </div>
+            <p>102 rue de l'adresse 38000 Grenoble</p>
+            <p>1 Étage - Garage - Jardin</p>
+            <p>Nullam porttitor nisl ac augue tempor, vel 
+            dapibus nulla vestibulum. Aliquam accumsan
+            eros et odio venenatis accumsan.</p>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="img/terrain.jpg" alt="Maison">
+          <div class="building_info">
+            <div class="flex">
+              <h3><span>Maison</span> - 240m²</h3>
+              <p>400 000€</p>
+            </div>
+            <p>102 rue de l'adresse 38000 Grenoble</p>
+            <p>1 Étage - Garage - Jardin</p>
+            <p>Nullam porttitor nisl ac augue tempor, vel 
+            dapibus nulla vestibulum. Aliquam accumsan
+            eros et odio venenatis accumsan.</p>
+          </div>
+        </div>
+      </section>
+
+    <section class="announce">
+      <h2>UNE ANNONCE A FAIRE ?</h2>
+      <a href="formulaire.html" class="button">Créer une annonce</a>
+    </section>
     </main>
-    <div class="wrapper">
 
-    </div>
+    <footer>
+      <p>© Copyright Joana 2024</p>
+    </footer>
   </body>
 </html>
