@@ -1,8 +1,18 @@
 /*Design de Joana*/
+:root {
+    --mainColor: #E5844B;
+    --secondaryColor: #FFBE98;
+    --tertiaryColor: #FAFAFA;
+    --darkColor: #662600;
+    --successColor: #2C7F4C;
+    --warningColor: #F88E2A;
+    --dangerColor: #972727;
+}
 
 body {
     font-family: "Exo", sans-serif;
     line-height: 1.6;
+    background-color: var(--tertiaryColor);
 }
 
 h1, h2, h3, h4 { font-weight: 700; }
@@ -21,7 +31,7 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
-    color : #FFBE98;
+    color : var(--secondaryColor);
 }
 
 .navbar {
@@ -42,7 +52,7 @@ header {
 }
 
 .navbar li:last-child a {
-    color: white;
+    color: var(--tertiaryColor);
 }
 
 .title {
@@ -52,16 +62,16 @@ header {
 }
 
 h1 {
-    background-color: white;
+    background-color: var(--tertiaryColor);
     padding: 10px 20px;
     border-radius: 10px;
-    color : #E5844B;
+    color : var(--mainColor);
 }
 
 .square1, .square2 {
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: var(--tertiaryColor);
     border-radius: 10px;
 }
 
@@ -80,7 +90,7 @@ h1 {
 .wrapper {
     max-width: 1000px;
     margin: 60px auto;
-    color : #E5844B;
+    color : var(--mainColor);
 }
 
 section.flex {
@@ -117,8 +127,8 @@ section.flex {
     margin: 20px auto;
     width: 240px;
     padding: 20px;
-    color: white;
-    background-color: #E5844B;
+    color: var(--tertiaryColor);
+    background-color: var(--mainColor);
     text-align: center;
     cursor: pointer;
     font-size: 20px;
@@ -127,20 +137,19 @@ section.flex {
     transition: 500ms;
     display: block;
     padding: 20px;
-    color: white;
+    color: var(--tertiaryColor);
     transition: 500ms;
 }
 
 .button:hover {
-    background-color: #fde6d1;
-    color: #E5844B;
+    background-color: var(--darkColor);
 }
 
 footer {
     text-align: center;
     height: 200px;
-    background-color : #FFBE98;
-    color : white;
+    background-color : var(--secondaryColor);
+    color : var(--tertiaryColor);
 }
 
 footer p {

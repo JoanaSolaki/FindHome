@@ -38,54 +38,58 @@
 
     <main class="wrapper">
       <form action="formulaire.html">
-        <div>
-          <label for="titleAnnounce">Titre de l'annonce :</label>
-          <input type="text" id="titleAnnounce" minlength="5" required="*" />
+        <div id="titre_annonce">
+          <label for="titleAnnounce">Titre de l'annonce <abbr title="required">*</abbr> :</label>
+          <input type="text" id="titleAnnounce" minlength="5" required />
         </div>
 
-        <div>
-          <legend>Type de bien :
-            <input type="radio" name="type" id="house" required="*" />
+        <div id="type_de_bien">
+          <legend>Type de bien <abbr title="required">*</abbr> :
+            <input type="radio" name="type" id="house" value="maison" required />
             <label for="house">Maison</label>
-            <input type="radio" name="type" id="appartement" />
+            <input type="radio" name="type" id="appartement" value="appartement" />
             <label for="appartement">Appartement</label>
-            <input type="radio" name="type" id="place" />
+            <input type="radio" name="type" id="place" value="terrain" />
             <label for="place">Terrain</label>
           </legend>
         </div>
 
-        <div>
-          <label for="surface">Surface (en m²) :</label>
-          <input type="number" id="surface" required="*" />
+        <div id="surface">
+          <label for="area">Surface (en m²) <abbr title="required">*</abbr> :</label>
+          <input type="number" id="area" required />
         </div>
 
-        <div>
-          <label for="price">Prix :</label>
-          <input type="number" id="price" required="*" />
-          <legend>
-            <input type="radio" name="price" id="rent" required="*" />
-            <label for="rent">Loyer</label>
-            <input type="radio" name="price" id="buy" />
-            <label for="buy">Achat</label>
-          </legend>
+        <div id="prix">
+          <label for="price">Prix <abbr title="required">*</abbr> :</label>
+          <input type="number" id="price" required />
+          <input type="radio" name="price" id="rent" required />
+          <label for="rent">Loyer</label>
+          <input type="radio" name="price" id="buy" />
+          <label for="buy">Achat</label>
         </div>
 
-        <div>
-          <label for="adress">Adresse :</label>
-          <input type="text" id="adress" required="*" />
+        <div id="adresse">
+          <label for="adress">Adresse <abbr title="required">*</abbr> :</label>
+          <input type="text" id="adress" required />
         </div>
 
-        <div>
-          <label for="description">Description :</label>
-          <input type="textarea" id="description" />
+        <div id="description">
+          <label for="description">Description <abbr title="required">*</abbr> :</label>
+          <input type="textarea" id="description" minlength="20" required/>
         </div>
 
-        <div>
-          <label for="floors">Nombres d'étages :</label>
-          <input type="number" id="floors" />
+        <div class="flex">
+          <div id="nb_etages">
+            <label for="floors">Nombres d'étages :</label>
+            <input type="number" id="floors" placeholder="0" min="0" max="10"/>
+          </div>
+          <div id="nb_pieces">
+            <label for="rooms">Nombres de pièces :</label>
+            <input type="number" id="rooms" placeholder="0" min="0" max="10"/>
+          </div>
         </div>
 
-        <div>
+        <div id="particularites">
           <legend>Particularités :
             <input type="checkbox" id="garden" />
             <label for="garden">Jardin</label>
@@ -95,10 +99,23 @@
             <label for="elevator">Ascenseur</label>
             <input type="checkbox" id="balcony" />
             <label for="balcony">Balcon</label>
+            <input type="checkbox" id="parking" />
+            <label for="parking">Parking</label>
           </legend>
         </div>
 
-        <button type="sumbit" class="button">Publier</button>
+        <div id="etude_de_sol">
+          <legend>Étude de sol :
+            <input type="radio" name="ground" id="ditit" required />
+            <label for="rent">Réalisé</label>
+            <input type="radio" name="ground" id="didnt" />
+            <label for="buy">Pas réalisé</label>
+            <input type="radio" name="ground" id="no_ground" />
+            <label for="buy">Pas concerné</label>
+          </legend>
+        </div>
+
+        <button type="button" class="button" id="button">Publier</button>
       </form>
     </main>
 

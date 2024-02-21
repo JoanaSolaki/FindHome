@@ -6,7 +6,7 @@
     box-sizing: border-box; /*permet d'inclure les bordures et les padding DANS la dimension*/
 }
 
-a {
+a, abbr {
     color: inherit;
     text-decoration: none;
 }
