@@ -46,4 +46,8 @@ export class Appartement extends BienImmobilier {
         this.#garage=garage
         this.#pieces=pieces
     }
+
+    injectHtml (titre, description, prix, adresse, loyer, achat, surface, ascenseur, balcon, parking, garage, pieces) {
+        
+    }
 }

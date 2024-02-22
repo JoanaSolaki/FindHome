@@ -1,15 +1,43 @@
+:root {
+    --mainColor: #E5844B;
+    --secondaryColor: #FFBE98;
+    --tertiaryColor: #FAFAFA;
+    --darkColor: #662600;
+    --successColor: #2C7F4C;
+    --warningColor: #F88E2A;
+    --dangerColor: #972727;
+}
+
 form {
     margin: 0 auto;
     width: 800px;
     font-size: 20px;
 }
 
-form div {
+form fieldset {
     margin: 30px 0;
 }
 
-form input {
+form input[type="text"], form input[type="number"], form textarea {
+    appearance: none;
     margin: 0 10px;
-    height: 20px;
-    width: auto;
+    height: 40px;
+    width: 200px;
+    box-shadow: 0 0 0 2px var(--mainColor);
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0 10px;
+    border: none;
+    box-shadow: 0 0 0 2px var(--mainColor);
+}
+
+button[type="submit"] {
+    border: none
 }

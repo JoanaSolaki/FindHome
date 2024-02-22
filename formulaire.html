@@ -38,12 +38,12 @@
 
     <main class="wrapper">
       <form action="formulaire.html">
-        <div id="titre_annonce">
+        <fieldset id="titre_annonce">
           <label for="titleAnnounce">Titre de l'annonce <abbr title="required">*</abbr> :</label>
           <input type="text" id="titleAnnounce" minlength="5" required />
-        </div>
+        </fieldset>
 
-        <div id="type_de_bien">
+        <fieldset id="type_de_bien">
           <legend>Type de bien <abbr title="required">*</abbr> :
             <input type="radio" name="type" id="house" value="maison" required />
             <label for="house">Maison</label>
@@ -52,70 +52,70 @@
             <input type="radio" name="type" id="place" value="terrain" />
             <label for="place">Terrain</label>
           </legend>
-        </div>
+        </fieldset>
 
-        <div id="surface">
+        <fieldset id="surface">
           <label for="area">Surface (en m²) <abbr title="required">*</abbr> :</label>
-          <input type="number" id="area" required />
-        </div>
+          <input type="number" id="area" min="0" required />
+        </fieldset>
 
-        <div id="prix">
+        <fieldset id="prix">
           <label for="price">Prix <abbr title="required">*</abbr> :</label>
           <input type="number" id="price" required />
-          <input type="radio" name="price" id="rent" required />
+          <input type="radio" name="price" id="rent" value="Loyer" required />
           <label for="rent">Loyer</label>
-          <input type="radio" name="price" id="buy" />
+          <input type="radio" name="price" id="buy" value="Achat"/>
           <label for="buy">Achat</label>
-        </div>
+        </fieldset>
 
-        <div id="adresse">
+        <fieldset id="adresse">
           <label for="adress">Adresse <abbr title="required">*</abbr> :</label>
           <input type="text" id="adress" required />
-        </div>
+        </fieldset>
 
-        <div id="description">
+        <fieldset id="descriptionDiv">
           <label for="description">Description <abbr title="required">*</abbr> :</label>
-          <input type="textarea" id="description" minlength="20" required/>
-        </div>
+          <textarea id="description" minlength="20" required></textarea>
+        </fieldset>
 
-        <div class="flex">
-          <div id="nb_etages">
+        <fieldset class="flex">
+          <fieldset id="nb_etages">
             <label for="floors">Nombres d'étages :</label>
             <input type="number" id="floors" placeholder="0" min="0" max="10"/>
-          </div>
-          <div id="nb_pieces">
+          </fieldset>
+          <fieldset id="nb_pieces">
             <label for="rooms">Nombres de pièces :</label>
             <input type="number" id="rooms" placeholder="0" min="0" max="10"/>
-          </div>
-        </div>
+          </fieldset>
+        </fieldset>
 
-        <div id="particularites">
+        <fieldset id="particularites">
           <legend>Particularités :
-            <input type="checkbox" id="garden" />
+            <input type="checkbox" name="particularity" id="garden" value="Jardin"/>
             <label for="garden">Jardin</label>
-            <input type="checkbox" id="garage" />
+            <input type="checkbox" name="particularity" id="garage" value="Garage"/>
             <label for="garage">Garage</label>
-            <input type="checkbox" id="elevator" />
+            <input type="checkbox" name="particularity" id="elevator" value="Ascenseur"/>
             <label for="elevator">Ascenseur</label>
-            <input type="checkbox" id="balcony" />
+            <input type="checkbox" name="particularity" id="balcony" value="Balcon"/>
             <label for="balcony">Balcon</label>
-            <input type="checkbox" id="parking" />
+            <input type="checkbox" name="particularity" id="parking" value="Parking"/>
             <label for="parking">Parking</label>
           </legend>
-        </div>
+        </fieldset>
 
-        <div id="etude_de_sol">
+        <fieldset id="etude_de_sol">
           <legend>Étude de sol :
-            <input type="radio" name="ground" id="ditit" required />
-            <label for="rent">Réalisé</label>
-            <input type="radio" name="ground" id="didnt" />
-            <label for="buy">Pas réalisé</label>
-            <input type="radio" name="ground" id="no_ground" />
-            <label for="buy">Pas concerné</label>
+            <input type="radio" name="ground" id="study_done" value="Réalisé" required />
+            <label for="study_done">Réalisé</label>
+            <input type="radio" name="ground" id="study_not_done" value="Pas réalisé"/>
+            <label for="study_not_done">Pas réalisé</label>
+            <input type="radio" name="ground" id="not_concerned" value="Pas concerné"/>
+            <label for="not_concerned">Pas concerné</label>
           </legend>
-        </div>
+        </fieldset>
 
-        <button type="button" class="button" id="button">Publier</button>
+        <button type="submit" class="button" id="button">Publier</button>
       </form>
     </main>
 
