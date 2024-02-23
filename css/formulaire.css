@@ -30,6 +30,11 @@ form input[type="text"], form input[type="number"], form textarea {
     border: none;
 }
 
+form textarea {
+    height: 60px;
+    width: 400px;
+}
+
 form input[type="radio"], form input[type="checkbox"] {
     height: 1.5em;
     width: 1.5em;

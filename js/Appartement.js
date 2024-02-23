@@ -47,7 +47,34 @@ export class Appartement extends BienImmobilier {
         this.#pieces=pieces
     }
 
-    injectHtml (titre, description, prix, adresse, loyer, achat, surface, ascenseur, balcon, parking, garage, pieces) {
-        
+    createCard () {
+        const createCard = document.createElement('div')
+        createCard.classList.add=('card')
+
+        const createBuildingInfo = document.createElement('div')
+        createBuildingInfo.classList.add=('building_info')
+
+        const createFlex = document.createElement('div')
+        createFlex.classList.add=('flex')
+
+        const createImg = document.createElement('img')
+        createImg.innerHTML='<img src="img/appartement.jpg" alt="Appartement">'
+
+        const createTitleH3 = document.createElement('h3')
+        createTitleH3.innerHTML='<span>' + this.titre + '</span> - ' + this.surface + 'm²'
+
+        const createPrice = document.createElement('p')
+        if (loyer === true) {
+            createPrice.innerText=this.prix + '€ par mois'
+        } else {
+            createPrice.innerText=this.prix + '€'
+        }
+
+        const createCorpus = document.createElement('p')
+        createCorpus.innerHTML='<p>' + this.adresse + '</p> <p>'+ this.pieces + this.ascenseur + this.balcon + this.parking + this.garage + '</p> <p>' + this.description + '</p>'
+    }
+
+    injectHtml (target) {
+
     }
 }

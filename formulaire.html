@@ -37,7 +37,7 @@
     </header>
 
     <main class="wrapper">
-      <form action="formulaire.html">
+      <form action="formulaire.html" id="formulaire">
         <fieldset id="titre_annonce">
           <label for="titleAnnounce">Titre de l'annonce <abbr title="required">*</abbr> :</label>
           <input type="text" id="titleAnnounce" minlength="5" required />
@@ -78,15 +78,14 @@
           <textarea id="description" minlength="20" required></textarea>
         </fieldset>
 
-        <fieldset class="flex">
-          <fieldset id="nb_etages">
-            <label for="floors">Nombres d'étages :</label>
-            <input type="number" id="floors" placeholder="0" min="0" max="10"/>
-          </fieldset>
-          <fieldset id="nb_pieces">
-            <label for="rooms">Nombres de pièces :</label>
-            <input type="number" id="rooms" placeholder="0" min="0" max="10"/>
-          </fieldset>
+        <fieldset id="nb_etages">
+          <label for="floors">Nombres d'étages :</label>
+          <input type="number" id="floors" placeholder="0" min="0" max="10"/>
+        </fieldset>
+        
+        <fieldset id="nb_pieces">
+          <label for="rooms">Nombres de pièces :</label>
+          <input type="number" id="rooms" placeholder="0" min="0" max="10"/>
         </fieldset>
 
         <fieldset id="particularites">
@@ -115,7 +114,7 @@
           </legend>
         </fieldset>
 
-        <button type="submit" class="button" id="button">Publier</button>
+        <button type="submit" class="button">Publier</button>
       </form>
     </main>
 

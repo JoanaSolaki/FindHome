@@ -3,35 +3,22 @@ import { Maison } from "./Maison.js";
 import { Terrain } from "./Terrain.js";
 
 const titreAnnonce = document.getElementById('titleAnnounce')
-const type = document.querySelectorAll('input[name="type"]')
 const surface = document.getElementById('area')
 const prix = document.getElementById('price')
-const priceType = document.querySelectorAll('input[name="price"]')
 const adresse = document.getElementById('adress')
 const description = document.getElementById('description')
 const etages = document.getElementById('floors')
 const pieces = document.getElementById('rooms')
 const particularités = document.querySelectorAll('input[name="particularity"]')
-const sol = document.querySelectorAll('input[name="ground"]')
 
-document.getElementById("button").addEventListener('click', () => {
+document.getElementById("formulaire").addEventListener('submit', (event) => {
+    event.preventDefault()
+
     const titreAnnonceValue = titreAnnonce.value
-    let selectedType;
-    for (const radioButton of type) {
-        if (radioButton.checked) {
-            selectedType = radioButton.value;
-            break;
-        }
-    }
+    const typeValue = document.querySelector('input[name=type]:checked').value
     const surfaceValue = surface.value
     const prixValue = prix.value
-    let selectedPrix;
-    for (const radioButton of priceType) {
-        if (radioButton.checked) {
-            selectedPrix = radioButton.value;
-            break;
-        }
-    }
+    const prixType = document.querySelectorAll('input[name="price"]:checked').value
     const adresseValue = adresse.value
     const descriptionValue = description.value
     const etagesValue = etages.value
@@ -43,29 +30,22 @@ document.getElementById("button").addEventListener('click', () => {
         }
         selectedParticularites.toString()
     });
-    
-    let selectedGround;
-    for (const radioButton of sol) {
-        if (radioButton.checked) {
-            selectedGround = radioButton.value;
-            break;
-        }
-    }
+    const solValue = document.querySelectorAll('input[name="ground"]:checked').value
 
     let cards = JSON.parse(localStorage.getItem("Annonce")) || []
 
     const newCard = {
         titre: titreAnnonceValue,
-        type: selectedType,
+        type: typeValue,
         surface: surfaceValue,
         prix: prixValue,
-        typePrix: selectedPrix,
+        typePrix: prixType,
         adresse: adresseValue,
         description: descriptionValue,
         etages: etagesValue,
         pieces: piecesValue,
         particularites: selectedParticularites,
-        sol: selectedGround
+        sol: solValue
     };
 
     cards.push(newCard)
