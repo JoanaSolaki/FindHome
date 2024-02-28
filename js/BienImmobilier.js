@@ -4,8 +4,6 @@ export class BienImmobilier {
     #description;
     #prix;
     #adresse;
-    #loyer;
-    #achat;
     #surface;
 
     set id (id) {
@@ -38,18 +36,6 @@ export class BienImmobilier {
     get adresse () {
         return this.#adresse
     }
-    set loyer (loyer) {
-        this.#loyer = loyer
-    }
-    get loyer () {
-        return this.#loyer
-    }
-    set achat (achat) {
-        this.#achat = achat
-    }
-    get achat () {
-        return this.#achat
-    }
     set surface (surface) {
         this.#surface = surface
     }
@@ -57,14 +43,12 @@ export class BienImmobilier {
         return this.#surface
     }
 
-    constructor (titre, description, prix, adresse, loyer, achat, surface) {
+    constructor (titre, description, prix, adresse, surface) {
         this.#id=Math.floor(Math.random() * 9999) + 1
         this.#titre=titre
         this.#description=description
         this.#prix=prix
         this.#adresse=adresse
-        this.#loyer=loyer
-        this.#achat=achat
         this.#surface=surface
     }
 }

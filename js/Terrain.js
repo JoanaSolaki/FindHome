@@ -10,8 +10,8 @@ export class Terrain extends BienImmobilier {
         return this.#etudeSol
     }
 
-    constructor (titre, description, prix, adresse, loyer, achat, surface, etudeSol) {
-        super(titre, description, prix, adresse, loyer, achat, surface)
+    constructor (titre, description, prix, adresse, surface, etudeSol) {
+        super(titre, description, prix, adresse, surface)
         this.#etudeSol=etudeSol
     }
 }

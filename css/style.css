@@ -21,7 +21,6 @@ h1, h2, h3, h4 { font-weight: 700; }
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 header {
@@ -99,13 +98,14 @@ section.flex {
 
 .card {
     width: 400px;
+    min-height: 600px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 4px 2px #00000025;
     overflow: hidden;
 }
 
-.card img {
+.annonce_img {
     height: 400px;
     position: relative;
     left: -25%;
@@ -115,7 +115,7 @@ section.flex {
     padding: 0 20px;
 }
 
-.building_info p {
+.building_info .info_text {
     margin: 10px 0;
 }
 
