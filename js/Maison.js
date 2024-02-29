@@ -24,7 +24,7 @@ export class Maison extends BienImmobilier {
         return this.#pieces
     }
 
-    constructor (titre, description, prix, adresse, surface, etage, particularites, pieces) {
+    constructor (titre, description, prix, adresse, surface, etage = 0, particularites = null, pieces = 0) {
         super(titre, description, prix, adresse, surface)
         this.#etage=etage
         this.#particularites=particularites
@@ -54,7 +54,7 @@ export class Maison extends BienImmobilier {
 
         const createCorpus = document.createElement('p')
         createCorpus.classList.add('info_text')
-        createCorpus.innerHTML='<p>' + this.adresse + '</p> <p>'+ this.etages + ' Étages - ' +  '<p>'+ this.pieces + " Pieces - " + this.particularites.join(' - ') + '</p><p>' + this.description + "</p>"
+        createCorpus.innerHTML='<p class="info_text">' + this.adresse + '</p> <p class="info_text">'+ this.etage + ' Étages - ' + this.pieces + " Pieces - " + this.particularites.join(' - ') + '</p><p class="info_text">' + this.description + "</p>"
 
         createCard.append(createBuildingInfo)
         createBuildingInfo.append(createFlex)

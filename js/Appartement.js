@@ -46,7 +46,7 @@ export class Appartement extends BienImmobilier {
 
         const createCorpus = document.createElement('p')
         createCorpus.classList.add('info_text')
-        createCorpus.innerHTML='<p>' + this.adresse + '</p> <p>'+ this.pieces + " Pieces - " + this.particularites.join(' - ') + '</p><p>' + this.description + "</p>"
+        createCorpus.innerHTML='<p class="info_text">' + this.adresse + '</p> <p class="info_text">'+ this.pieces + " Pieces - " + this.particularites.join(' - ') + '</p><p class="info_text">' + this.description + "</p>"
 
         createCard.append(createBuildingInfo)
         createBuildingInfo.append(createFlex)

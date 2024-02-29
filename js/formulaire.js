@@ -12,6 +12,7 @@ const pieces = document.getElementById('rooms')
 const particularités = document.querySelectorAll('input[name="particularity"]')
 
 document.getElementById("formulaire").addEventListener('submit', (event) => {
+    event.preventDefault()
 
     const titreAnnonceValue = titreAnnonce.value
     const typeValue = document.querySelector('input[name=type]:checked').value
@@ -27,7 +28,7 @@ document.getElementById("formulaire").addEventListener('submit', (event) => {
             selectedParticularites.push(particularity.value)
         }
     });
-    const solValue = document.querySelectorAll('input[name="ground"]:checked').value
+    const solValue = document.querySelector('input[name=ground]:checked').value
 
     let cards = JSON.parse(localStorage.getItem("Annonce")) || []
 
@@ -40,8 +41,8 @@ document.getElementById("formulaire").addEventListener('submit', (event) => {
         description: descriptionValue,
         etages: etagesValue,
         pieces: piecesValue,
-        particularites: selectedParticularites,
-        sol: solValue
+        sol: solValue,
+        particularites: selectedParticularites
     };
 
     cards.push(newCard)

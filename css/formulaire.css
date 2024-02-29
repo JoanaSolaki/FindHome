@@ -8,6 +8,14 @@
     --dangerColor: #972727;
 }
 
+.navbar li:last-child a {
+    color: var(--secondaryColor);
+}
+
+.navbar li:first-child a {
+    color: var(--tertiaryColor);
+}
+
 form {
     margin: 0 auto;
     width: 800px;

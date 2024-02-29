@@ -15,7 +15,7 @@ for (let i = 0; i < annonces.length; i++) {
         maison.injectHtml("cardTarget")
     }
     if (annonce.type === "terrain") {
-        const terrain = new Terrain(annonce.titre, annonce.description, annonce.prix, annonce.adresse, annonce.surface, annonce.etudeSol)
+        const terrain = new Terrain(annonce.titre, annonce.description, annonce.prix, annonce.adresse, annonce.surface, annonce.sol)
         terrain.injectHtml("cardTarget")
     }
 }
