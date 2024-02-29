@@ -12,7 +12,6 @@ const pieces = document.getElementById('rooms')
 const particularités = document.querySelectorAll('input[name="particularity"]')
 
 document.getElementById("formulaire").addEventListener('submit', (event) => {
-    event.preventDefault()
 
     const titreAnnonceValue = titreAnnonce.value
     const typeValue = document.querySelector('input[name=type]:checked').value

@@ -1,0 +1,35 @@
+@media (max-width: 800px) {
+    form {
+        margin: 0 auto;
+        width: auto;
+        padding: 40px;
+      }
+      fieldset {
+        display: flex;
+        flex-flow: column;
+      }
+      label {
+        display: block;
+      }
+}
+
+@media (max-width: 550px) {
+    .wrapper {margin: 0 auto}
+    .title {left: -1%;} 
+      .square1 {right: 10%;}
+    .square2 {
+        top: -65px;
+        right: 0%;
+      }
+    h2 {margin-left: 20px;}
+    form input[type="text"] {width: 90%;}
+    form input[type="number"] {width: 40%;}
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        margin: 0;
+    }
+    .navbar p, .navbar li, .navbar a {
+        padding: 40px 10px;}
+    .navbar p { padding: 30px 10px;}
+}

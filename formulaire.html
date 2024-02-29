@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/formulaire.css" />
+    <link rel="stylesheet" href="css/responsive.css"/>
     <script
       src="https://kit.fontawesome.com/1ed5727593.js"
       crossorigin="anonymous"
@@ -45,12 +46,19 @@
 
         <fieldset id="type_de_bien">
           <legend>Type de bien <abbr title="required">*</abbr> :
-            <input type="radio" name="type" id="house" value="maison" required />
-            <label for="house">Maison</label>
-            <input type="radio" name="type" id="appartement" value="appartement" />
-            <label for="appartement">Appartement</label>
-            <input type="radio" name="type" id="place" value="terrain" />
-            <label for="place">Terrain</label>
+            <label for="house">
+              <input type="radio" name="type" id="house" value="maison" required />
+              Maison
+            </label>
+            <label for="appartement">
+              <input type="radio" name="type" id="appartement" value="appartement" />
+              Appartement
+            </label>
+            <label for="place">
+              <input type="radio" name="type" id="place" value="terrain" />
+              Terrain
+            </label>
+
           </legend>
         </fieldset>
 
@@ -86,27 +94,43 @@
 
         <fieldset id="particularites">
           <legend>Particularités :
-            <input type="checkbox" name="particularity" id="garden" value="Jardin"/>
-            <label for="garden">Jardin</label>
-            <input type="checkbox" name="particularity" id="garage" value="Garage"/>
-            <label for="garage">Garage</label>
-            <input type="checkbox" name="particularity" id="elevator" value="Ascenseur"/>
-            <label for="elevator">Ascenseur</label>
-            <input type="checkbox" name="particularity" id="balcony" value="Balcon"/>
-            <label for="balcony">Balcon</label>
-            <input type="checkbox" name="particularity" id="parking" value="Parking"/>
-            <label for="parking">Parking</label>
+            <label for="garden">
+              <input type="checkbox" name="particularity" id="garden" value="Jardin"/>
+              Jardin
+            </label>
+            <label for="garage">
+              <input type="checkbox" name="particularity" id="garage" value="Garage"/>
+              Garage
+            </label>
+            <label for="elevator">
+              <input type="checkbox" name="particularity" id="elevator" value="Ascenseur"/>
+              Ascenseur
+            </label>
+            <label for="balcony">
+              <input type="checkbox" name="particularity" id="balcony" value="Balcon"/>
+              Balcon
+            </label>
+            <label for="parking">
+              <input type="checkbox" name="particularity" id="parking" value="Parking"/>
+              Parking
+            </label>
           </legend>
         </fieldset>
 
         <fieldset id="etude_de_sol">
           <legend>Étude de sol :
-            <input type="radio" name="ground" id="study_done" value="Réalisé" required />
-            <label for="study_done">Réalisé</label>
-            <input type="radio" name="ground" id="study_not_done" value="Pas réalisé"/>
-            <label for="study_not_done">Pas réalisé</label>
-            <input type="radio" name="ground" id="not_concerned" value="Pas concerné"/>
-            <label for="not_concerned">Pas concerné</label>
+            <label for="study_done">
+              <input type="radio" name="ground" id="study_done" value="Réalisé" required />
+              Réalisé
+            </label>
+            <label for="study_not_done">
+              <input type="radio" name="ground" id="study_not_done" value="Pas réalisé"/>
+              Pas réalisé
+            </label>
+            <label for="not_concerned">
+              <input type="radio" name="ground" id="not_concerned" value="Pas concerné"/>
+              Pas concerné
+            </label>
           </legend>
         </fieldset>
 

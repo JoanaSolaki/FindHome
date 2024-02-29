@@ -22,7 +22,6 @@ form input[type="text"], form input[type="number"], form textarea {
     appearance: none;
     margin: 0 10px;
     height: 40px;
-    width: 200px;
     box-shadow: 0 0 0 2px var(--mainColor);
     font-size: 20px;
     padding: 0 10px;
@@ -30,9 +29,13 @@ form input[type="text"], form input[type="number"], form textarea {
     border: none;
 }
 
+form input[type="text"] {width: 50%;}
+
+form input[type="number"] {width: 20%;}
+
 form textarea {
-    height: 60px;
-    width: 400px;
+    height: 100px;
+    width: 100%;
 }
 
 form input[type="radio"], form input[type="checkbox"] {
