@@ -57,3 +57,9 @@ form input[type="radio"], form input[type="checkbox"] {
 button[type="submit"] {
     border: none
 }
+
+.succes {
+    text-align: center;
+    color: var(--successColor);
+    font-size: 2em;
+}

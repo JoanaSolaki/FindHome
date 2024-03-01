@@ -12,6 +12,7 @@ const pieces = document.getElementById('rooms')
 const particularités = document.querySelectorAll('input[name="particularity"]')
 
 document.getElementById("formulaire").addEventListener('submit', (event) => {
+    event.preventDefault()
 
     const titreAnnonceValue = titreAnnonce.value
     const typeValue = document.querySelector('input[name=type]:checked').value
@@ -47,4 +48,11 @@ document.getElementById("formulaire").addEventListener('submit', (event) => {
     cards.push(newCard)
 
     localStorage.setItem("Annonce", JSON.stringify(cards))
+
+    document.getElementById('formulaire').style.display="none"
+    const wrapper = document.getElementsByClassName('wrapper')[0]
+    const succes = document.createElement('p')
+    succes.innerText="L'annonce à bien été enregistrée !"
+    succes.classList.add("succes")
+    wrapper.append(succes)
 });
