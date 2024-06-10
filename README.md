@@ -9,6 +9,12 @@ Le projet était à faire en solitaire.<br>
 
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/C2l4IpStS8SdjRntgE6qe0/Immobilier?type=design&node-id=0%3A1&mode=design&t=R8DMO0RGI9PY2rw3-1)
 
+## Skills
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&amp;logo=javascript&amp;logoColor=F7DF1E)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white)
+
 ## Contexte du projet
 
 Ce projet adopte la POO en JavaScript pour organiser le code de manière modulaire et réutilisable. Les annonces immobilières seront modélisées sous forme d'objets, ce qui en simplifie la manipulation et la gestion. Les classes seront conçues selon le principe d'encapsulation, garantissant que chaque classe contient toutes les données et fonctions nécessaires à son fonctionnement autonome.
@@ -20,3 +26,10 @@ Vous enrichirez cette base par des classes spécialisées telles que `Appartemen
 Par exemple, la classe `Appartement` pourrait se distinguer par des propriétés supplémentaires comme `étage` et `ascenseur`, tandis que `Maison` pourrait se singulariser par la présence d'un `jardin` et d'un `garage`.
 
 Vous êtes encouragés à explorer au-delà de ces suggestions en introduisant de nouvelles classes ou en adaptant les existantes selon les besoins de votre application.
+
+## Livrables
+
+- Gestion de projet (si existant)
+- Maquettes (incluant : variables de styles couleurs et texte + un composant Figma minimum + variant du composant optionnel)
+- Site web hébergé sur GitHub pages
+- Rendu Simplonline
